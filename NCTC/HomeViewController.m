@@ -13,6 +13,19 @@
 @end
 
 @implementation HomeViewController
+@synthesize btnNews;
+@synthesize btnEvents;
+@synthesize btnCampus;
+@synthesize btnNCTC;
+@synthesize btnAcademics;
+@synthesize btnAthletics;
+@synthesize btnSocial;
+@synthesize btnSchedule;
+@synthesize btnStudent;
+@synthesize btnDirectory;
+@synthesize btnEmergency;
+@synthesize btnContact;
+@synthesize btnInfo;
 
 - (void)viewDidLoad
 {
@@ -22,6 +35,19 @@
 
 - (void)viewDidUnload
 {
+    [self setBtnEvents:nil];
+    [self setBtnNews:nil];
+    [self setBtnCampus:nil];
+    [self setBtnNCTC:nil];
+    [self setBtnAcademics:nil];
+    [self setBtnAthletics:nil];
+    [self setBtnSocial:nil];
+    [self setBtnSchedule:nil];
+    [self setBtnStudent:nil];
+    [self setBtnDirectory:nil];
+    [self setBtnEmergency:nil];
+    [self setBtnContact:nil];
+    [self setBtnInfo:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
